@@ -1,0 +1,13 @@
+.boxit-original { display: none; }
+
+.boxit-container {
+	position: relative;
+}
+
+.boxit-child { display: none; }
+.boxit-child.current { display: block; }
+
+.boxit-child .boxit-tile { display: none; }
+/*.boxit-child.current .boxit-tile { display: block; }*/
+
+/*.boxit-visible { display: block; }*/

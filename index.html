@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>jQuery Boxit</title>
+		<link rel="stylesheet" href="css/jquery.boxit.css" />
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.boxit.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$("#demo").boxit({
+					width: 1024,
+					height: 768,
+					rows: 10,
+					columns: 10,
+					animation: {
+						speed: 700
+					},
+					//direction: "back"
+					interval: 3000,
+					mode: "random"
+				});
+				$("#demo").boxit("next");
+			});
+		</script>
+	</head>
+	<body>
+		<ul id="demo">
+			<li><img src="images/demo1.jpg" /></li>
+			<li><img src="images/demo2.jpg" /></li>
+			<li><img src="images/demo3.jpg" /></li>
+			<li><img src="images/demo4.jpg" /></li>
+			<!--<li><img src="images/demo5.jpg" /></li>
+			<li><img src="images/demo6.jpg" /></li>
+			<li><img src="images/demo7.jpg" /></li>-->
+		</ul>
+	</body>
+</html>
